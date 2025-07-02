@@ -1,61 +1,55 @@
-# Getting Started with Java Project
+#  JAVA Project
 
 This project was bootstrapped with Java.
 
-## Available Commands
+## Prerequisites
 
-In the project directory, you can run:
+- Java Development Kit (JDK) 8 or higher
+- (Optional) An IDE like IntelliJ IDEA, Eclipse, or VS Code for easier code navigation
 
-### `mvn clean install`
+## Installation
 
-Builds the project and installs the package into the local repository.\
-This command compiles the code, runs tests, and packages the application.
+1. **Clone the repository** (if not already downloaded):
+   ```sh
+   git clone <repository-url>
+   cd Student-Management-System
+   ```
+2. **Compile the source code:**
+   ```sh
+   javac -d bin src/*.java
+   ```
+   This will compile all Java files in the `src` directory and place the `.class` files in the `bin` directory.
 
-### `mvn spring-boot:run`
+## How to Run
 
-Runs the application in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+After compiling, run the main class using:
 
-The application will reload when you make changes.\
-You may also see any errors in the console.
+```sh
+java -cp bin Main
+```
 
-### `mvn test`
+This will start the Student Management System in your terminal.
 
-Launches the test runner.\
-This command runs all the tests in the project.
+## Project Structure
 
-### `mvn package`
+```
 
-Packages the application into a JAR file.\
-The JAR file will be created in the `target` directory.
+Sort-Display-Student-Information/
+├── bin/         # Compiled Java class files
+│   ├──Main.class
+│   ├──Student.class
+│   └──StudentComparator.class
+├── src/         # Java source files
+│   ├──Main.class
+│   └──Student.class
+└── README.md    # Project documentation
+```
 
-### `mvn clean`
-
-Cleans the project by deleting the `target` directory.\
-This command is useful for ensuring a fresh build.
+- `src/`: Contains all Java source code files.
+- `bin/`: Contains compiled `.class` files after building.
 
 ## Learn More
 
-You can learn more in the [Maven documentation](https://maven.apache.org/guides/index.html).
-
-To learn Spring Boot, check out the [Spring Boot documentation](https://spring.io/projects/spring-boot).
-
-### Dependency Management
-
-This section has moved here: [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
-
-### Building an Executable JAR
-
-This section has moved here: [Spring Boot Executable JAR](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-executable-jar.html)
-
-### Advanced Configuration
-
-This section has moved here: [Maven Advanced Configuration](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-
-### Deployment
-
-This section has moved here: [Spring Boot Deployment](https://spring.io/guides/gs/spring-boot/)
-
-### Troubleshooting
-
-This section has moved here: [Maven Troubleshooting](https://maven.apache.org/guides/introduction/introduction-to-troubleshooting.html)
+- [Java Documentation](https://docs.oracle.com/javase/tutorial/)
+- [How to Compile and Run Java](https://www.oracle.com/java/technologies/javase/codeconventions-137265.html)
+- For questions or contributions, please open an issue or pull request.
